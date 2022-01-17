@@ -3,29 +3,29 @@ Test module with calculations
 """
 
 
-def add(a: int, b: int) -> int:
+def add(nr_a: int, nr_b: int) -> int:
     """
     Add two numbers
     """
-    return a + b
+    return nr_a + nr_b
 
 
-def subtract(a: int, b: int) -> int:
+def subtract(nr_a: int, nr_b: int) -> int:
     """
     Subtract two numbers
     """
-    return a - b
+    return nr_a - nr_b
 
 
-def multiply(a: int, b: int) -> int:
+def multiply(nr_a: int, nr_b: int) -> int:
     """
     Multiply two numbers
     """
-    return a * b
+    return nr_a * nr_b
 
 
-def divide(a: int, b: int) -> float:
+def divide(nr_a: int, nr_b: int) -> float:
     """
     Divide two numbers
     """
-    return a / b
+    return nr_a / nr_b
