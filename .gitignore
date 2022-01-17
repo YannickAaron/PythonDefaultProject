@@ -7,6 +7,7 @@
 .yarn-cache
 .mypy_cache
 .pytest_cache
+.venv
 
 # env
 .env*.local
