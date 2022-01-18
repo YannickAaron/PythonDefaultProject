@@ -14,3 +14,8 @@ eval "$(pyenv init --path)"
 eval "$(pyenv init -)"
 
 ### install prepare: ./husky/prepare
+
+# PythonDefaultProject
+Python Default to use for new Projects
+
+pytest: just name file _test.py
