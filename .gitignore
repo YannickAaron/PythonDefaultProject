@@ -8,6 +8,7 @@
 .mypy_cache
 .pytest_cache
 .venv
+.ipynb_checkpoints
 
 # env
 .env*.local
@@ -54,10 +55,3 @@ static.json
 
 # npm
 package-lock.json
-
-.docker
-prisma.mmd
-
-# jupyter
-**/.ipynb_checkpoints
-**/*.ipynb

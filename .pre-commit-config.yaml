@@ -3,8 +3,8 @@ repos:
   - repo: https://github.com/pre-commit/pre-commit-hooks
     rev: v4.0.1
     hooks:
-#      - id: check-added-large-files
-#        exclude: '^src/data/(.*)$'
+      - id: check-added-large-files
+        exclude: '^src/data/(.*)$'
       - id: check-ast
       - id: check-yaml
       - id: check-merge-conflict
@@ -15,6 +15,10 @@ repos:
       - id: detect-private-key
       - id: pretty-format-json
       - id: trailing-whitespace
+  - repo: https://github.com/asottile/pyupgrade
+    rev: v2.31.1
+    hooks:
+     - id: pyupgrade
   - repo: local
     hooks:
       - id: system
@@ -50,3 +54,20 @@ repos:
         entry: sh -c 'poetry run pytest src'
         pass_filenames: false
         language: system
+  - repo: https://github.com/nbQA-dev/nbQA
+    rev: 1.3.1
+    hooks:
+    - id: nbqa-black
+      types: [jupyter]
+      additional_dependencies: [black]
+    - id: nbqa-pyupgrade
+      additional_dependencies: [pyupgrade]
+    - id: nbqa-isort
+      additional_dependencies: [isort==5.6.4]
+    - id: nbqa-mypy
+      types: [jupyter]
+      additional_dependencies: [mypy]
+    - id: nbqa-pylint
+      name: nbqa-pylint
+      types: [jupyter]
+      additional_dependencies: [pylint]
