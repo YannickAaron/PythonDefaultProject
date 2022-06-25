@@ -15,7 +15,7 @@ Python Default to use for new Projects
 pytest: just name file _test.py
 
 
-poetry run poetry-update.py -> build an npm package
+poetry run python poetry-update.py -> build an npm package
 
 
 
@@ -25,8 +25,6 @@ poetry run poetry-update.py -> build an npm package
 Repo: [https://github.com/pre-commit/pre-commit-hooks](https://github.com/pre-commit/pre-commit-hooks)
 
 Some out-of-the-box hooks for pre-commit.
-
-
 
 
 
