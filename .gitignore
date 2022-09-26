@@ -5,7 +5,7 @@
 /node_modules
 /.next
 
-/poetry.lock
+poetry.lock
 
 # cache
 .yarn-cache

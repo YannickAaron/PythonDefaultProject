@@ -4,7 +4,6 @@ repos:
     rev: v4.0.1
     hooks:
       - id: check-added-large-files
-        exclude: '^src/data/(.*)$'
       - id: check-ast
       - id: check-yaml
       - id: check-merge-conflict
@@ -37,21 +36,21 @@ repos:
     hooks:
       - id: system
         name: MyPy
-        entry: sh -c 'poetry run mypy src'
+        entry: sh -c 'poetry run mypy default'
         pass_filenames: false
         language: system
   - repo: local
     hooks:
       - id: system
         name: Pylint
-        entry: sh -c 'poetry run pylint -j 0 src'
+        entry: sh -c 'poetry run pylint -j 0 default'
         pass_filenames: false
         language: system
   - repo: local
     hooks:
       - id: system
         name: Pytest
-        entry: sh -c 'poetry run pytest src'
+        entry: sh -c 'poetry run pytest default'
         pass_filenames: false
         language: system
   - repo: https://github.com/nbQA-dev/nbQA
