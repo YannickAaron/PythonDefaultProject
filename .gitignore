@@ -1,7 +1,11 @@
+# make sure to use: git rm -r --cached . to ignore already tracked files
+
 # compiled output
 /dist
 /node_modules
 /.next
+
+/poetry.lock
 
 # cache
 .yarn-cache

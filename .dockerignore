@@ -14,4 +14,3 @@ jest.config.js
 renovate.json
 typedoc.json
 node_modules
-jamballa
